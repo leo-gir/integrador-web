@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>Login - Valhalla Tattoo</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="./index.html"
+          ><img
+            src="./assets/img/logo.png"
+            class="logo-nav"
+            alt="logo-valhalla"
+        /></a>
+        <ul class="nav-list">
+          <li><a href="#">INICIO</a></li>
+          <li><a href="#">NOSOTROS</a></li>
+          <li><a href="#">GALERIA</a></li>
+          <li><a href="#">PRODUCTOS</a></li>
+          <li><a href="#">CONTACTO</a></li>
+        </ul>
+
+        <ul class="nav-register">
+          <li><a href="./login.html">LOGIN</a></li>
+          <li><a href="./register.html">REGISTRO</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="login-img">
+        <img src="./assets/img/vikingo-login.png" alt="logo-valhalla" />
+      </div>
+      <section id="login">
+        <h1>Iniciar sesión</h1>
+        <form class="login">
+          <div class="mail-login">
+            <label for="mail-login"> Correo electrónico: </label>
+            <input type="email" id="mail-login" name="mail-login" placeholder="Ingresá el correo registrado" required />
+          </div>
+          <div class="pass-login">
+            <label for="pass-login">Contraseña: </label>
+            <input type="password" id="pass-login" name="pass-login" />
+          </div>
+
+          <div>
+            <div>
+              <input type="submit" value="Ingresar" />
+            </div>
+            <div><p>Crear cuenta</p></div>
+          </div>
+        </form>
+      </section>
+
+      <section id="login">
+        <div class="login">
+          <h1>Iniciar sesión</h1>
+          <form class="form-login">
+            
+            <div>
+              <label for="mail-login"> Correo electrónico: </label>
+              <input type="email" id="mail-login" name="mail-login" placeholder="Ingresá el correo registrado" required />
+            
+              <label for="pass-login">Contraseña: </label>
+              <input type="password" id="pass-login" name="pass-login" />
+
+              <a href="#">Recuperar contraseña</a>
+          </div>
+
+          <div>
+            <a href="./register.html">Crear cuenta</a>
+            <input type="submit" value="Ingresar" />
+          </div>
+          </form>
+        </div>
+      </section>
+
+
+
+    </main>
+
+    <footer>
+      <img src="./assets/img/see_you.png" alt="" />
+    </footer>
+  </body>
+</html>
