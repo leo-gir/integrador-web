@@ -35,6 +35,8 @@ p{
 h1 {
     font-family:'Pieces';
     font-weight: 500;
+    color: whitesmoke;
+    font-size: 100px;
 
 }
 
@@ -135,10 +137,10 @@ main {
     width: 100%;
     height: 550px;
     border-radius: 0 0 10px 10px;
-    /* box-shadow: 10px 10px 30px black; */
+    /* box-shadow: 10px 10px 30px white; */
     margin-top: 90px;
-    /* border: var(--blanco) solid; */
-    border-width: 0px 1px 1px 1px ;
+    /* border: var(--blanco) solid;
+    border-width: 0px 1px 1px 1px ; */
 }
 
 #about{
@@ -151,9 +153,6 @@ main {
 #about h1 {
     display: flex;
     flex-direction: column;
-    color: white;
-    font-size: 120px;
-    background-color: var(--negro);
     margin-top: 20px;
     text-align: center;
 }
@@ -265,6 +264,11 @@ main {
     gap:20px;
 }
 
+.galeria-img img{
+    border: whitesmoke 0.5px solid;
+    border-radius: 10px;
+}
+
 #productos {
     display: flex;
     flex-direction: column;
@@ -273,32 +277,38 @@ main {
     width: 100%;
 }
 
-.cards-productos {
+.cards-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
     flex-direction: row;
+    padding: 0 20px 20px 20px;  
+    width: 100%;
+}
+
+.cards-productos{
+    display: flex;
+    justify-content:stretch;
+    align-items: center;
+    flex-direction: column;
+    max-width: 250px;
     padding: 20px;
-    margin: 40px;
-    width: 30%;
+    margin: 0 80px 0 80px;
+    gap: 15px;
 }
 
 .cards-productos h3,
-.cards-productos p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.cards-productos p,
+.cards-productos img {
     color: whitesmoke;
     text-align: center;
 }
 
-.cards-productos img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+.cards-productos h3,
+.cards-productos p   {
+    color: whitesmoke;
+    text-align: center;
 }
 
 #contacto{
@@ -407,30 +417,33 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 0;
-    width: 30%;
     margin: 120px 0 30px 0;
 }
 
-.login{
+.login-img img{
+    width: 80%;
+}
+
+.container-login{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border: whitesmoke solid 1px;
-    padding: 80px;
-    min-width: 800px;
+    padding: 0 30px 30px 30px;
     border-radius: 15px;
+    max-width: 800px;
 }
 
-/* .login:last-child{
-    align-items: end;
-} */
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}   
 
 .login label{
-    display: flex;
-    align-items: start;
-    justify-content: flex-start;
     color: whitesmoke;
     padding-bottom: 8px;
     padding-top: 13px;
@@ -443,10 +456,15 @@ footer {
     height: 30px;
     border: 0 none;
     padding: 10px;
-    /* align-self: flex-end; */
 }
 
-.login input[type=submit] {
+.login a{
+    align-self: end;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.login-btn input[type=submit] {
     padding:5px 15px; 
     background: var(--negro); 
     border:2px var(--blanco) solid;
@@ -456,10 +474,14 @@ footer {
     width: 100px;
     height: 50px;
     color: whitesmoke;
-    margin-top: 18px;
-    align-self: flex-end;
+    font-size: 16px;
+    
 }
 
-.login p{
-    color: white;
+.login-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 16px;
 }

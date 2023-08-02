@@ -7,6 +7,67 @@
     <title>Registro - Valhalla Tattoo</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <a href="./index.html"><img src="./assets/img/logo.png" class="logo-nav" alt="logo-valhalla"></a>
+            <ul class="nav-list">
+                <li><a href="#hero">INICIO</a></li>
+                <li><a href="#about">NOSOTROS</a></li>
+                <li><a href="#galeria">GALERIA</a></li>
+                <li><a href="#productos">PRODUCTOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+
+            <ul class="nav-register">
+                <li><a href="./login.html">LOGIN</a></li>
+                <li><a href="./register.html">REGISTRO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-img">
+          <img src="./assets/img/vikingo-login.png" alt="logo-valhalla" />
+        </div>
+  
+        <section id="registro">
+          <div class="container-registro">
+            <h1>Registrate</h1>
+            <form class="form-registro">
+              
+              <div class="registro">
+                <label for="nombre-registro"> Nombre:  </label>
+                <input type="text" id="nombre-registro" name="nombre-registro" placeholder="Ingresá tu nombre" required />
+                
+                <label for="apellido-registro"> Apellido:  </label>
+                <input type="text" id="apellido-registro" name="apellido-registro" placeholder="Ingresá tu apellido" required />
+                
+                <label for="tel-registro"> Teléfono: </label>
+                <input type="text" alt="number" id="tel-registro" name="tel-registro" placeholder="Ingesá tu nº de teléfono" required />
+                
+                <label for="mail-registro"> Correo electrónico:  </label>
+                <input type="text" id="mail-registro" name="mail-registro" placeholder="Ingresá tu correo" required />
+
+                <label for="pass-registro">Contraseña: </label>
+                <input type="password" id="pass-registro" name="pass-registro" placeholder="Ingresá tu contraseña" required/>
+                
+                <label for="re-pass-registro">Contraseña: </label>
+                <input type="password" id="re-pass-registro" name="re-pass-registro" placeholder="Repetí tu contraseña" required/>
+            </div>
+  
+            <div class="registro-btn">
+              <a href="./login.html">Iniciar sesión</a>
+              <input type="submit" value="Registrarse" />
+            </div>
+            </form>
+          </div>
+        </section>
+      </main>
+  
+      <footer>
+        <img src="./assets/img/see_you.png" alt="" />
+      </footer>
+    </body>
+  </html>
 </body>
 </html>
