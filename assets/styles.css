@@ -68,7 +68,7 @@ h3 {
     --gris: #4d4d4d;
     --verde: #3d4d42;
     --background: #101010;
-    --rojo:#c03324;
+    --rojo:#d12011;
     --blanco: #cdcdcd ;
 }
 
@@ -109,7 +109,8 @@ h3 {
     color: white;
 }
 
-.nav-list a {
+.nav-list a,
+.nav-register a {
     color: white;
 }
 
@@ -117,6 +118,14 @@ h3 {
 .nav-register {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-register li:last-child{
+    border: whitesmoke 1px solid;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 main {
@@ -465,7 +474,7 @@ footer {
 }
 
 .login-btn input[type=submit] {
-    padding:5px 15px; 
+    /* padding:5px 15px;  */
     background: var(--negro); 
     border:2px var(--blanco) solid;
     cursor:pointer;
@@ -479,6 +488,77 @@ footer {
 }
 
 .login-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 16px;
+}
+
+
+/* ----- REGISTRO ----- */
+
+.container-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    border: whitesmoke solid 1px;
+    padding: 0 30px 30px 30px;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+/* .form-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.registro{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.registro label{
+    color: whitesmoke;
+    padding-bottom: 8px;
+    padding-top: 13px;
+    font-size: 25px;
+}
+
+.registro input{
+    border-radius: 3px;
+    width: 400px;
+    height: 30px;
+    border: 0 none;
+    padding: 10px;
+}
+
+.registro a{
+    align-self: end;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.registro-btn input[type=submit] {
+    /* padding:5px 15px;  */
+    background: var(--negro); 
+    border:2px var(--blanco) solid;
+    cursor:pointer;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    width: 100px;
+    height: 50px;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.registro-btn{
     display: flex;
     justify-content: space-between;
     align-items: center;
