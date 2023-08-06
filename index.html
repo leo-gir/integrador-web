@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/animaciones.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -18,11 +19,11 @@
         <nav class="navbar">
             <a href="./index.html"><img src="./assets/img/logo.png" class="logo-nav" alt="logo-valhalla"></a>
             <ul class="nav-list">
-                <li><a href="#hero" >INICIO</a></li>
-                <li><a href="#about">NOSOTROS</a></li>
-                <li><a href="#galeria">GALERIA</a></li>
-                <li><a href="#productos">PRODUCTOS</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
+                <li class=""><a href="#hero" class="subrayado">INICIO</a></li>
+                <li><a href="#about" class="subrayado">NOSOTROS</a></li>
+                <li><a href="#galeria" class="subrayado">GALERIA</a></li>
+                <li><a href="#productos" class="subrayado">PRODUCTOS</a></li>
+                <li><a href="#contacto" class="subrayado">CONTACTO</a></li>
             </ul>
 
             <ul class="nav-register">
@@ -40,7 +41,6 @@
 
         </section>
 
-
         <section id="about">
             <h1>Nosotros</h1>
             <div class="nosotros">
@@ -57,17 +57,6 @@
                         </div>
                         <div><img src="./assets/img/tatuador.png" class="card-img" alt=""></div>
                     </div>
-                    <!-- <div class="cards-about">
-                        <h3>Erik</h3>
-                        <div class="cards-info">
-                            <p>Erik, tatuador especializado en diseños nórdicos, captura la esencia de la cultura
-                                vikinga y la mitología escandinava en tatuajes que son un tributo a la rica herencia de
-                                los pueblos del norte. Con paleta de colores inspirada en paisajes escandinavos y
-                                habilidad única en símbolos vikingos, crea tatuajes de belleza intemporal, honrando las
-                                tradiciones ancestrales con pasión y dedicación.</p>
-                            <img src="./assets/img/tatuador.png" alt="">
-                        </div>
-                    </div> -->
                     <div class="cards-about">
                         
                         <div class="cards-info">
@@ -95,82 +84,81 @@
                     </div>
                 </div>
             </div>
+        </section>
 
 
-            <section id="galeria">
-                <div class="galeria">
-                    <div>
-                        <h1>Nuestros Trabajos</h1>
-                    </div>
-                    <div class="galeria-img">
-                        <img src="./assets/img/tattoo1.jpg" alt="">
-                        <img src="./assets/img/tattoo2.jpg" alt="">
-                        <img src="./assets/img/tattoo3.jpg" alt="">
-                        <img src="./assets/img/tattoo4.jpg" alt="">
-                        <img src="./assets/img/tattoo5.jpg" alt="">
-                        <img src="./assets/img/tattoo6.jpg" alt="">
-                    </div>
+        <section id="galeria">
+            <div class="galeria">
+                <div>
+                    <h1>Nuestros Trabajos</h1>
                 </div>
-            </section>
+                <div class="galeria-img">
+                    <a href="./assets/img/grandes/tattoo1-grande.jpg" target="_blank"><img src="./assets/img/tattoo1.jpg" alt=""></a>
+                    <a href="./assets/img/grandes/tattoo2-grande.jpg" target="_blank"><img src="./assets/img/tattoo2.jpg" alt=""></a>
+                    <a href="./assets/img/grandes/tattoo3-grande.jpg" target="_blank"><img src="./assets/img/tattoo3.jpg" alt=""></a>
+                    <a href="./assets/img/grandes/tattoo4-grande.jpg" target="_blank"><img src="./assets/img/tattoo4.jpg" alt=""></a>
+                    <a href="./assets/img/grandes/tattoo5-grande.jpg" target="_blank"><img src="./assets/img/tattoo5.jpg" alt=""></a>
+                    <a href="./assets/img/grandes/tattoo6-grande.jpg" target="_blank"><img src="./assets/img/tattoo6.jpg" alt=""></a>
+                    <a href="./assets/img/grandes/tattoo7-grande.jpg" target="_blank"><img src="./assets/img/tattoo7.jpg" alt=""></a>
+                    <a href="./assets/img/grandes/tattoo8-grande.jpg" target="_blank"><img src="./assets/img/tattoo8.jpg" alt=""></a>
 
-
-            <section id="productos">
-                <h1>Productos</h1>
-                <div class="cards-container">
-                    <div class="cards-productos">
-                        <img src="./assets/img/gift-card.png" alt="">
-                        <h3>GIFT CARDS</h3>
-                        <p>Regalá una gift card con el monto que quieras para tatuajes o piercings</p>
-                    </div>
-                    <div class="cards-productos">
-                        <img src="./assets/img/piercings.png" alt="">
-                        <h3>PIERCINGS</h3>
-                        <p>Elegí el que te guste entre nuestra amplia variedad de modelos</p>
-                    </div>
-                    <div class="cards-productos">
-                        <img src="./assets/img/cremas.png" alt="">
-                        <h3>CREMAS</h3>
-                        <p>Todo lo necesario para el pre y post tatuaje</p>
-                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
+
+        <section id="productos">
+            <h1>Productos</h1>
+            <div class="cards-container">
+                <div class="cards-productos">
+                    <img src="./assets/img/gift-card.png" alt="">
+                    <h3>GIFT CARDS</h3>
+                    <p>Regalá una gift card con el monto que quieras para tatuajes o piercings</p>
+                </div>
+                <div class="cards-productos">
+                    <img src="./assets/img/piercings.png" alt="">
+                    <h3>PIERCINGS</h3>
+                    <p>Elegí el que te guste entre nuestra amplia variedad de modelos</p>
+                </div>
+                <div class="cards-productos">
+                    <img src="./assets/img/cremas.png" alt="">
+                    <h3>CREMAS</h3>
+                    <p>Todo lo necesario para el pre y post tatuaje</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
             <div>
                 <h1>Contacto</h1>
             </div>
-            <section id="contacto">
-                <div class="contacto">
-                    <form class="form">
-                        <h2>Dejanos tu consulta</h2>
-                        <div>
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre" required>
-                        </div>
-
-                        <div>
-                            <label for="mail">Correo electrónico:</label>
-                            <input type="email" name="mail" id="mail" placeholder="Ingresá tu correo" required>
-                        </div>
-
-                        <div><label for="tel">Teléfono:</label>
-                            <input type="number" name="tel" id="tel" placeholder="Ingresá tu teléfono" required>
-                        </div>
-
-                        <div><label for="consulta">Ingresá tu consulta</label>
-                            <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Igresá tu consulta"
-                                required></textarea>
-                        </div>
-
-                        <input type="submit" value="Enviar">
-                    </form>
-
-                    <div class="mapa">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2159.4862668729183!2d-58.50070441305956!3d-34.638642024340236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9b13f277e21%3A0x67fd751d4428e217!2sAv.%20Rivadavia%209740%2C%20C1407%20DZT%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1690739901228!5m2!1ses-419!2sar"
-                            style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contacto">
+                <form class="form">
+                    <h2>Dejanos tu consulta</h2>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre" required>
                     </div>
+                    <div>
+                        <label for="mail">Correo electrónico:</label>
+                        <input type="email" name="mail" id="mail" placeholder="Ingresá tu correo" required>
+                    </div>
+                    <div><label for="tel">Teléfono:</label>
+                        <input type="number" name="tel" id="tel" placeholder="Ingresá tu teléfono" required>
+                    </div>
+                    <div><label for="consulta">Ingresá tu consulta</label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Igresá tu consulta"
+                            required></textarea>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </form>
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2159.4862668729183!2d-58.50070441305956!3d-34.638642024340236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9b13f277e21%3A0x67fd751d4428e217!2sAv.%20Rivadavia%209740%2C%20C1407%20DZT%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1690739901228!5m2!1ses-419!2sar"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </section>
+            </div>
+        </section>
     </main>
     <footer>
         <img src="./assets/img/see_you.png" alt="">

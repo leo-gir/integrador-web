@@ -1,0 +1,29 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+/* ----- NAV ----- */
+.subrayado::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: whitesmoke;
+    transition: width 0.5s ease;
+}
+
+.subrayado:hover::before{
+    width: 100%;
+}
+
+@keyframes agrandarImagen{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        transform: scale(1.1,1.1);
+    }
+}
