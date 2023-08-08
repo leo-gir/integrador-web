@@ -259,7 +259,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./img/vegisir-fondo.jpg');
+    background-image: url('./img/1e0fa7dff4c504214ccfc83cc894d430.jpg');
     background-repeat: no-repeat;
     /* background-size:cover; */
     background-position: center;
@@ -279,8 +279,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.904);
-    width: 70%;
+    background-color: rgba(122, 122, 122, 0.26);
+    width: 30%;
     height: 30%;
     bottom: 20px;
 }
