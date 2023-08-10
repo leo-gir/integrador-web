@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="./assets/animaciones.css">
+    <!-- <link rel="stylesheet" href="./assets/mediaqueries.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
 
     <title>Inicio - Valhalla Tattoo</title>
 </head>
@@ -22,6 +23,14 @@
         <nav class="navbar">
             <a href="./index.html"><img src="./assets/img/logo.png" class="logo-nav" alt="logo-valhalla"></a>
             <ul class="nav-list">
+
+                
+                <label for="toggle-cart" class="cart-label"><img src="./assets/img/cart.png" alt="cart"></label>
+                <input type="checkbox" id="toggle-cart">
+
+                <label for="toggle-menu" class="menu-label"><img src="./assets/img/bars.png" alt="menu"></label>
+                <input type="checkbox" id="toggle-menu">
+
                 <li class=""><a href="#hero" class="subrayado">INICIO</a></li>
                 <li><a href="#about" class="subrayado">NOSOTROS</a></li>
                 <li><a href="#galeria" class="subrayado">GALERIA</a></li>
@@ -39,7 +48,7 @@
     <main>
 
         <section id="hero">
-            <img src="./assets/img/hero-nuevo2.png" alt="">
+            <img src="./assets/img/hero.png" alt="">
         </section>
 
         </section>
@@ -47,7 +56,7 @@
         <section id="about">
             <h1>Nosotros</h1>
             <div class="nosotros">
-                <img src="./assets/img/tattoo.jpg" class="nos-img" alt="">
+                <div class="nos-img"><img src="./assets/img/tattoo.jpg" alt=""></div>
                 <div class="about-info">
                     <div class="cards-about">
                         <div class="cards-info">
@@ -127,24 +136,24 @@
                     <img src="./assets/img/gift-card.png" alt="">
                     <h3>GIFT CARDS</h3>
                     <p>Regalá una gift card con el monto que quieras para tatuajes o piercings</p>
-                    <div class="card-back">
-                        <!-- <a href="#"><h3>VER MÁS</h3></a> -->
+                    <div class="ver-mas">
+                        <a href="#"><h3>VER MÁS</h3></a>
                     </div>
                 </div>
                 <div class="cards-productos">
                     <img src="./assets/img/piercings.jpg" alt="">
                     <h3>PIERCINGS</h3>
                     <p>Elegí el que te guste entre nuestra amplia variedad de modelos</p>
-                    <div class="card-back">
-                        <!-- <a href="#"><h3>VER MÁS</h3></a> -->
+                    <div class="ver-mas">
+                        <a href="#"><h3>VER MÁS</h3></a>
                     </div>
                 </div>
                 <div class="cards-productos">
                     <img src="./assets/img/cremas.png" alt="">
                     <h3>CREMAS</h3>
                     <p>Todo lo necesario para el pre y post tatuaje</p>
-                    <div class="card-back">
-                        <!-- <a href="#"><h3>VER MÁS</h3></a> -->
+                    <div class="ver-mas">
+                        <a href="#"><h3>VER MÁS</h3></a>
                     </div>
                 </div>
                 
@@ -152,9 +161,7 @@
         </section>
 
         <section id="contacto">
-            <div>
-                <h1>Contacto</h1>
-            </div>
+            <h1>Contacto</h1>
             <div class="contacto">
                 <form class="form">
                     <h2>Dejanos tu consulta</h2>
@@ -186,11 +193,10 @@
     </main>
     <footer id="footer">
         <div class="redes">
-            <img src="./assets/img/icon-ig.png" alt="">
-            <img src="./assets/img/icon-fb.png" alt="">
-            <img src="./assets/img/icon-mail.png" alt="">
-            <img src="./assets/img/icon-wa.png" alt="">
-            <img src="./assets/img/icon-tel.png" alt="">
+            <a href="https://instagram.com" target="_blank"><img src="./assets/img/icon-ig.png" alt=""></a>
+            <a href="https://facebook.com" target="_blank"><img src="./assets/img/icon-fb.png" alt=""></a>
+            <a href="mailto:valhalla@tattoo.com" target="_blank"><img src="./assets/img/icon-mail.png" alt=""></a>
+            <a href="https://whatsapp.com" target="_blank"><img src="./assets/img/icon-wa.png" alt=""></a>
         </div>
 
         <div class="footer-img">

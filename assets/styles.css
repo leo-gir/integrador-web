@@ -131,6 +131,22 @@ h3 {
     border-radius: 8px;
 }
 
+/* --- hamb --- */
+#toggle-menu {
+    display: none;
+}
+.menu-label {
+    display: none;
+}
+
+/* --- cart --- */
+#toggle-cart {
+    display: none;
+}
+.cart-label {
+    display: none;
+}
+
 main {
     background-color: var(--negro);
     /* background-image: url('./img/fondos/telon-fondo-textura-muro-hormigon-solido.jpg');
@@ -145,30 +161,30 @@ main {
     align-items: center;
 }
 
+/* ----- HERO ----- */
+
 #hero img {
     width: 100%;
-    /* height: 550px; */
-    border-radius: 0 0 10px 10px;
-    /* box-shadow: 10px 10px 30px white; */
     margin-top: 90px;
-    /* border: var(--blanco) solid;
-    border-width: 0px 1px 1px 1px ; */
+    margin-bottom: 100px;
 }
 
 
+/* ----- NOSOTROS ----- */
 #about{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 150px;
 }
 
-#about h1 {
+/* #about h1 {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-bottom: 50px;
     text-align: center;
-}
+} */
 
 .nosotros {
     display: flex;
@@ -176,11 +192,15 @@ main {
     align-items: center;
     flex-direction: row;
     width: 100%;
-    padding: 20p;
+    margin-top: 50px;
 }
 
 .nos-img{
-    width: 40%;
+    max-width: 560px;
+}
+
+.nos-img img{
+    border-radius: 10px;
 }
 
 .about-info {
@@ -243,7 +263,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: c       olumn;
+    flex-direction: column;
     transform: rotateX(180deg);
     position: absolute;
     top: 0;
@@ -360,11 +380,14 @@ main {
     border-radius: 10px;
 } */
 
+
+/* ----- GALERIA ----- */
 #galeria{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 150px;
 }
 
 .galeria{
@@ -372,6 +395,10 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.galeria h1{
+    margin-bottom: 50px;
 }
 
 .galeria-img{
@@ -388,6 +415,7 @@ main {
     border: whitesmoke 0.5px solid;
     border-radius: 10px;
     transition: transform 0.7s ease;
+    cursor: pointer;
 }
 
 .galeria-img img:hover{
@@ -399,6 +427,95 @@ main {
 /* ----- PRODUCTOS ----- */
 
 #productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    padding: 0 20px 20px 20px;  
+    width: 80%;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.cards-productos{
+    display: flex;
+    justify-content:stretch;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* max-width: 250px; */
+    width: 28%;
+    padding: 20px;
+    /* margin: 0 80px 0 80px; */
+    gap: 15px;
+    border-radius: 10px;
+    border: whitesmoke solid 1px;
+}
+
+.ver-mas{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background: rgba(0, 0, 0, 0.568); */
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    transform: translateY(20px);
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px); 
+}
+
+.ver-mas h3{
+    cursor: pointer;
+    text-shadow: 0 0 15px var(--rojo);
+}
+
+.cards-productos:hover .ver-mas {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cards-productos:hover .ver-mas {
+    transform: translateY(0);
+}
+
+.cards-productos h3,
+.cards-productos p,
+.cards-productos img {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.cards-productos h3,
+.cards-productos p   {
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+/* #productos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -422,10 +539,8 @@ main {
     justify-content:stretch;
     align-items: center;
     flex-direction: column;
-    /* max-width: 250px; */
     width: 33%;
     padding: 20px;
-    /* margin: 0 80px 0 80px; */
     gap: 15px;
 }
 
@@ -434,92 +549,20 @@ main {
 .cards-productos img {
     color: whitesmoke;
     text-align: center;
+}
+
+.cards-productos img{
+    border-radius: 10px;
+    border: whitesmoke solid 3px;
 }
 
 .cards-productos h3,
 .cards-productos p   {
     color: whitesmoke;
     text-align: center;
-}
-
-/* #productos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    padding: 0 20px 20px 20px;
-    width: 100%;
-}
-
-.cards-productos {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 250px;
-    padding: 20px;
-    margin: 0 80px 0 80px;
-    gap: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: transform 0.8s ease;
-    transform-style: preserve-3d;
-}
-
-.cards-productos:hover {
-    transform: rotateY(180deg);
-}
-
-.cards-productos h3,
-.cards-productos p,
-.cards-productos img {
-    color: whitesmoke;
-    text-align: center;
-}
-
-.cards-productos .card-back {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transform: rotateY(180deg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--background);
-    border-radius: 5px;
-    backface-visibility: hidden;
-}
-
-.card-back{
-    background-image: url('./img/compas.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.cards-productos .card-back a{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 254, 254, 0.185);
-    width: 100%;
-    height: 15%;
-    bottom: 50px;
-
 } */
+
+
 
 /* ----- CONTACTO ----- */
 
@@ -529,6 +572,7 @@ main {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 80px;
 }
 
 .contacto{
@@ -541,6 +585,7 @@ main {
     /* background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(26, 26, 26) 45%, rgb(35, 35, 35) 55%, rgba(24, 24, 24, 1) 100%); */
     background: linear-gradient(180deg, #212121 0%, var(--negro) 100%);
     border-radius: 10px;
+    margin-top: 50px;
 }
 
 .form{
@@ -777,6 +822,8 @@ footer {
     padding-top: 30px;
     font-size: 16px;
 }
+
+/* ----- FOOTER ----- */
 
 #footer{
     display: flex;
