@@ -1,5 +1,128 @@
+/* RESPONSIVE 1200 px - 993 px */
+@media(max-width: 1200px){
+
+    .icons-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .nav-list{
+        width: 60%;
+        height: 55vh;
+        position: absolute;
+        top: 90px;
+        right: 20%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 50px;
+        border-radius: 0 0 10px 10px;
+        /* display: none; */
+        gap: 40px;
+        background: rgba(0, 0, 0, 0.938);
+        border-left: whitesmoke 1px solid;
+        border-right: whitesmoke 1px solid;
+        border-bottom: whitesmoke 1px solid;
+        transform: translateX(150%);
+        transition: all 0.5s ease;
+    }
+    
+    .menu-label {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        cursor: pointer;
+    }
+
+    #toggle-menu:checked~.nav-list {
+        display: flex;
+        transform: translateX(0%);
+        transition: all 0.5s ease;
+    }
+
+    #about{
+        margin-bottom: 30px;
+    }
+
+    .nosotros{
+        margin-top: 0px;
+    }
+
+    .nos-img img{
+        display: none;
+    }
+
+    .cards-about .card-back a{
+        width: 50%;
+        height: 20%;
+    }
+
+    .about-info{
+        width: 100%;
+    }
+
+    #galeria {
+        margin-bottom: 60px;
+        }
+
+    #productos {
+        margin-bottom: 30px;
+        }
+
+    .cards-container{
+        margin-top: 30px ;
+    }
+
+    .contacto{
+        margin-top: 30px;
+        width: 90%;
+    }
+
+    .form{
+        margin-left: 30px;
+    }
+
+    .mapa{
+        width: 45%;
+    }
+}
+
+
+/* RESPONSIVE 992 px - 769 px */
+@media(max-width: 992px){
+
+}
+
+
+/* RESPONSIVE 768 px - 577 px */
+@media(max-width: 768px){
+
+}
+
+
+/* RESPONSIVE 576 px - 320 px */
+@media(max-width: 576px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----- NAV ----- */
-.navbar ul {
+/* .navbar ul {
     background-color: var(--bg-violeta);
     width: 100%;
     height: calc(70vh - 120px);
@@ -17,10 +140,10 @@
 .menu-label {
     display: flex;
     cursor: pointer;
-}
+} */
 
 /* ----- CART ----- */
-#toggle-menu:checked~.nav-list {
+/* #toggle-menu:checked~.nav-list {
     display: flex;
 }
 
@@ -31,4 +154,4 @@
 
 #toggle-cart:checked~.nav-list {
     display: flex;
-}
+} */

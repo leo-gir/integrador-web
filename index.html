@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="./assets/animaciones.css">
-    <!-- <link rel="stylesheet" href="./assets/mediaqueries.css"> -->
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -22,26 +22,28 @@
     <header>
         <nav class="navbar">
             <a href="./index.html"><img src="./assets/img/logo.png" class="logo-nav" alt="logo-valhalla"></a>
+            
+            
+            <!-- <label for="toggle-menu" class="menu-label"><img src="./assets/img/bars.png" alt="menu"></label> -->
+            <input type="checkbox" id="toggle-menu">
+            
+            
+
             <ul class="nav-list">
-
-                
-                <label for="toggle-cart" class="cart-label"><img src="./assets/img/cart.png" alt="cart"></label>
-                <input type="checkbox" id="toggle-cart">
-
-                <label for="toggle-menu" class="menu-label"><img src="./assets/img/bars.png" alt="menu"></label>
-                <input type="checkbox" id="toggle-menu">
-
                 <li class=""><a href="#hero" class="subrayado">INICIO</a></li>
                 <li><a href="#about" class="subrayado">NOSOTROS</a></li>
                 <li><a href="#galeria" class="subrayado">GALERIA</a></li>
                 <li><a href="#productos" class="subrayado">PRODUCTOS</a></li>
                 <li><a href="#contacto" class="subrayado">CONTACTO</a></li>
+                    <li><a href="./login.html">LOGIN</a></li>
+                    <li><a href="./register.html">REGISTRO</a></li>
             </ul>
 
-            <ul class="nav-register">
-                <li><a href="./login.html">LOGIN</a></li>
-                <li><a href="./register.html">REGISTRO</a></li>
-            </ul>
+            <div class="icons-nav">
+                <label for="toggle-cart" class="cart-label"><img src="./assets/img/cart.png" alt="cart"></label>
+                <label for="toggle-menu" class="menu-label"><img src="./assets/img/bars.png" alt="menu"></label>
+                <input type="checkbox" id="toggle-cart">
+            </div>
         </nav>
     </header>
 
