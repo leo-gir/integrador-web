@@ -11,16 +11,15 @@
 
     .nav-list{
         width: 60%;
-        height: 55vh;
+        height: calc(100vh - 200px);
         position: absolute;
         top: 90px;
         right: 20%;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
-        padding-top: 50px;
+        justify-content: center;
+        padding: 0;
         border-radius: 0 0 10px 10px;
-        /* display: none; */
         gap: 40px;
         background: rgba(0, 0, 0, 0.938);
         border-left: whitesmoke 1px solid;
@@ -93,19 +92,182 @@
 
 /* RESPONSIVE 992 px - 769 px */
 @media(max-width: 992px){
+    .navbar{
+        height: 70px;
+    }
 
+    .logo-nav{
+        height: 70px;
+    }
+
+    .cards-productos{
+        width: 33%;
+    }
+
+    .cards-productos img{
+        width: 100%;
+    }
+
+    .contacto{
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .form{
+        margin-left: 30px;
+        width: 90%;
+    }
+
+    .mapa{
+        width: 100%;
+        padding: 20px 0 20px 20px;
+    }
+
+    #footer{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .redes,
+    .diseño,
+    .footer-img{
+        width: 28%;
+        flex-wrap: wrap;
+    }
+
+    .redes img{
+        width: 90%;
+    }
+
+    .footer-img img{
+        width: 80%;
+    }
+
+    .diseño p{ 
+        font-size: 20px;
+    }
 }
 
 
 /* RESPONSIVE 768 px - 577 px */
 @media(max-width: 768px){
+    .navbar{
+        height: 70px;
+    }
+
+    .logo-nav{
+        height: 70px;
+    }
+
+    .cards-about{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards-info{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards-info h3{
+        text-align: center;
+        width: 100%;
+    }
+
+    .card-img{
+        padding-top: 20px;
+        min-height: 250px;
+    }
+
+    .cards-about .card-back a{
+        width: 70%;
+    }
+    
+    .cards-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards-productos{
+        width: 70%;
+    }
+
+    .cards-productos img{
+        width: 50%;
+    }
+    .contacto{
+        width: 90%;
+    }
+
+    .form{
+        margin-left: 0;
+    }
+
+    .redes,
+    .diseño,
+    .footer-img{
+        width: 33%;
+        flex-wrap: wrap;
+    }
+
+    .redes img{
+        width: 70%;
+        padding-bottom: 15px;
+    }
 
 }
 
-
 /* RESPONSIVE 576 px - 320 px */
 @media(max-width: 576px){
+    .navbar{
+        height: 70px;
+    }
 
+    .logo-nav{
+        height: 70px;
+    }
+
+    #hero img{
+        margin-bottom: 30px;
+    }
+    #contacto{
+        margin-bottom: 20px;
+    }
+
+    .form input,
+    .form textarea{
+        max-width: 300px;
+    }
+    #footer{
+        flex-direction: column;
+    }
+
+    .redes,
+    .diseño,
+    .footer-img{
+        width: 90%;
+    }
+
+    .redes img{
+        padding-bottom: 0;
+    }
+
+    .footer-img img{
+        width: 40%;
+        padding-bottom: 20px;
+    }
+
+    .diseño{
+        gap: 10px;
+    }
+
+    .diseño p{
+        font-size: 15px;
+    }
 }
 
 
