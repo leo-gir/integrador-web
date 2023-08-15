@@ -50,6 +50,11 @@ h3 {
     font-weight: 300;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
 :root {
     /* PAELTA 1 */
     /* --negro: #05060A;
@@ -132,6 +137,24 @@ h3 {
     height: 30px;
 }
 
+
+/* ----- ANIMACIÓN NAV ----- */
+.subrayado::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: whitesmoke;
+    transition: width 0.5s ease;
+}
+
+.subrayado:hover::before{
+    width: 100%;
+}
+
+
 /* --- hamb --- */
 #toggle-menu {
     display: none;
@@ -162,14 +185,13 @@ h3 {
     align-items: center;
     justify-content: center;
     padding: 0;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 0 10px;
     gap: 40px;
     background: rgba(0, 0, 0, 0.938);
     border-left: whitesmoke 1px solid;
     border-bottom: whitesmoke 1px solid;
-    z-index: -1;
-    /* transform: translateX(150%);
-    transition: all 0.5s ease; */
+    transform: translateX(100%);
+    transition: all 0.5s ease;
 }
 
 .cart h2{
@@ -187,13 +209,20 @@ h3 {
 
 .cart-item{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 90%;
+    width: 100%;
+    background-color: rgba(122, 122, 122, 0.26);
+    padding: 15px 0 15px 0;
+    /* padding-right: 20px ; */
+    /* margin-right: 20px; */
+
 }
 
 .cart-item img{
-    width: 40%;
+    width: 20%;
+    border-radius: 10px;
+    border: whitesmoke 2px solid;
 }
 
 .item-info{
@@ -211,7 +240,6 @@ h3 {
 }
 
 #toggle-cart:checked~.cart {
-    display: flex;
     transform: translateX(0%);
     transition: all 0.5s ease;
 }
