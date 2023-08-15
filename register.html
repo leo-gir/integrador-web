@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/register.css">
     <title>Registro - Valhalla Tattoo</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="./index.html"><img src="./assets/img/logo.png" class="logo-nav" alt="logo-valhalla"></a>
-            <ul class="nav-list">
-                <li><a href="index.html#hero">INICIO</a></li>
-                <li><a href="index.html#about">NOSOTROS</a></li>
-                <li><a href="index.html#galeria">GALERIA</a></li>
-                <li><a href="index.html#productos">PRODUCTOS</a></li>
-                <li><a href="index.html#contacto">CONTACTO</a></li>
-            </ul>
+  <header>
+    <nav class="navbar">
+        <a href="./index.html"><img src="./assets/img/logo.png" class="logo-nav" alt="logo-valhalla"></a>
+        
+        <input type="checkbox" id="toggle-menu">
+        
+        <ul class="nav-list">
+          <li class=""><a href="./index.html#hero" class="subrayado">INICIO</a></li>
+          <li><a href="./index.html#about" class="subrayado">NOSOTROS</a></li>
+          <li><a href="./index.html#galeria" class="subrayado">GALERIA</a></li>
+          <li><a href="./index.html#productos" class="subrayado">PRODUCTOS</a></li>
+          <li><a href="./index.html#contacto" class="subrayado">CONTACTO</a></li>
+            <li><a href="./login.html" class="subrayado">LOGIN</a></li>
+            <li><a href="./register.html" class="subrayado">REGISTRO</a></li>
+        </ul>
 
-            <ul class="nav-register">
-                <li><a href="./login.html">LOGIN</a></li>
-                <li><a href="./register.html">REGISTRO</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="icons-nav">
+            <label for="toggle-menu" class="menu-label"><img src="./assets/img/bars.png" alt="menu"></label>              
+        </div>
+    </nav>
+</header>
 
     <main>
         <div class="login-img">
@@ -64,9 +69,24 @@
         </section>
       </main>
   
-      <footer>
-        <img src="./assets/img/see_you.png" alt="" />
-      </footer>
+      <footer id="footer">
+        <div class="redes">
+            <a href="https://instagram.com" target="_blank"><img src="./assets/img/icon-ig.png" alt=""></a>
+            <a href="https://facebook.com" target="_blank"><img src="./assets/img/icon-fb.png" alt=""></a>
+            <a href="mailto:valhalla@tattoo.com" target="_blank"><img src="./assets/img/icon-mail.png" alt=""></a>
+            <a href="https://whatsapp.com" target="_blank"><img src="./assets/img/icon-wa.png" alt=""></a>
+        </div>
+
+        <div class="footer-img">
+            <img src="./assets/img/see_you.png" alt="">
+        </div>
+
+        <div class="diseño">
+            <p>Integrador Diseño Web - NUCBA</p>
+            <p>Diseño de Leonel Gironella</p>
+            <p>Año 2023</p>
+        </div>
+    </footer>
     </body>
   </html>
 </body>

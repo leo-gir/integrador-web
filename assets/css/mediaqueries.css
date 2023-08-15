@@ -96,10 +96,17 @@
         height: 70px;
     }
 
+    .nav-list{
+        top: 70px;
+    }
+
     .logo-nav{
         height: 70px;
     }
 
+    .cart{
+        top: 70px;
+    }
     .cards-productos{
         width: 33%;
     }
@@ -185,6 +192,14 @@
     .cards-about .card-back a{
         width: 70%;
     }
+
+    .card-back{
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:contain;
+        -webkit-background-size:contain;
+    }
+    
     
     .cards-container{
         flex-direction: column;
@@ -234,16 +249,47 @@
     #hero img{
         margin-bottom: 30px;
     }
+
+    h1{
+        font-size: 76px;
+    }
+
+    .galeria-img img{
+            max-width: 290px;
+    }
+
+    .card-back{
+        background-image: url(../img/flecha-rotada.jpg);
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        -webkit-background-size:cover;
+    }
+
+    .cards-about .card-back a{
+        width: 100%;
+    }
+    
+    .card-back h3{
+        font-size: 45px;
+    }
+
     #contacto{
         margin-bottom: 20px;
     }
 
+    .form h2{
+        font-size: 55px;
+        text-align: center;
+    }
     .form input,
     .form textarea{
-        max-width: 300px;
+        max-width: 260px;
     }
     #footer{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .redes,
@@ -252,17 +298,22 @@
         width: 90%;
     }
 
+    .redes{
+        flex-wrap: nowrap;
+    }
+
     .redes img{
         padding-bottom: 0;
+        width: 90%;
     }
 
     .footer-img img{
-        width: 40%;
+        width: 50%;
         padding-bottom: 20px;
     }
 
     .diseño{
-        gap: 10px;
+        gap: 5px;
     }
 
     .diseño p{
