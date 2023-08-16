@@ -176,8 +176,8 @@ html{
     }
 
 .cart{
-    width: calc(100vw - 70%);
-    height: calc(90vh - 90px) ;
+    width: calc(100vw - 60%);
+    height: calc(100vh - 150px);
     position: absolute;
     top: 90px;
     right: 0;
@@ -192,6 +192,8 @@ html{
     border-bottom: whitesmoke 1px solid;
     transform: translateX(200%);
     transition: all 0.5s ease;
+    overflow-y:scroll;
+    
 }
 
 .cart-container{
@@ -221,7 +223,6 @@ html{
     align-items: center;
     width: 80%;
     background-color: rgba(122, 122, 122, 0.26);
-    /* padding: 15px 0 15px 0; */
     margin-bottom: 25px;
     padding: 20px;
     border-radius: 10px;

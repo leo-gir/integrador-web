@@ -84,3 +84,7 @@ a{
     padding-top: 30px;
     font-size: 16px;
 }
+
+.footer-img img{
+    width: 50%;
+}
