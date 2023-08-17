@@ -35,7 +35,7 @@ p{
 h1 {
     font-family:'Pieces';
     font-weight: 500;
-    color: whitesmoke;
+    color: white;
     font-size: 100px;
 
 }
@@ -56,25 +56,12 @@ html{
 }
 
 :root {
-    /* PAELTA 1 */
-    /* --negro: #05060A;
-    --verde-oscuro: #141E16;
-    --verde:#1D2A23;
-    --verde-claro: #2B3A35;
-    --azul: #163341;
-    --celeste: #345C75;
-    --gris: #525866;
-    --lila: #696E84;
-    --lila-claro: #C4B5BC; */
-
-    /* PALETA 2 */
     --negro: #000000;
-    --gris-violeta: #4d4545;
     --gris: #4d4d4d;
     --verde: #3d4d42;
     --background: #101010;
     --rojo:#d12011;
-    --blanco: #cdcdcd ;
+    --blanco: #e6e6e6 ;
 }
 
 .navbar {
@@ -127,7 +114,7 @@ html{
 }
 
 .nav-register li:last-child{
-    border: whitesmoke 1px solid;
+    border: var(--blanco) 1px solid;
     padding: 10px;
     border-radius: 8px;
 }
@@ -146,7 +133,7 @@ html{
     bottom: -2px;
     width: 0;
     height: 1px;
-    background-color: whitesmoke;
+    background-color: var(--blanco);
     transition: width 0.5s ease;
 }
 
@@ -188,8 +175,8 @@ html{
     border-radius: 0 0 0 10px;
     gap: 40px;
     background: rgba(0, 0, 0, 0.938);
-    border-left: whitesmoke 1px solid;
-    border-bottom: whitesmoke 1px solid;
+    border-left: var(--blanco) 1px solid;
+    border-bottom: var(--blanco) 1px solid;
     transform: translateX(200%);
     transition: all 0.5s ease;
     overflow-y:scroll;
@@ -206,7 +193,7 @@ html{
 .cart h2{
     font-size: 60px;
     text-align: center;
-    color: whitesmoke;
+    color: white;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -226,13 +213,13 @@ html{
     margin-bottom: 25px;
     padding: 20px;
     border-radius: 10px;
-    border: whitesmoke 1px solid;
+    border: var(--blanco) 1px solid;
 }
 
 .cart-item img{
     width: 70px;
     border-radius: 10px;
-    border: whitesmoke 2px solid;
+    border: var(--blanco) 2px solid;
 }
 
 .item-info{
@@ -240,15 +227,14 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding-right: 50px; */
-    color: whitesmoke;
+    color: var(--blanco);
 }
 
 .item-handler{
     display: flex;
     justify-content: center;
     align-items:center;
-    color: whitesmoke;
+    color: var(--blanco);
     gap: 15px;
 }
 
@@ -261,7 +247,7 @@ html{
 
 .down,
 .up{
-    border: whitesmoke 1px solid;
+    border: var(--blanco) 1px solid;
     border-radius: 5px;
     padding: 5px 8px;
     cursor: pointer;
@@ -273,7 +259,7 @@ html{
     align-items: center;
     flex-direction: row;
     width: 100%;
-    color: whitesmoke;
+    color: var(--blanco);
     text-align: center;
     padding: 20px;
 }
@@ -294,9 +280,9 @@ html{
     font-family: 'Norsebold', sans-serif;
     font-size: 30px;
     background-color: var(--negro);
-    border: whitesmoke 2px solid;
+    border: var(--blanco) 2px solid;
     border-radius: 8px;
-    color: whitesmoke;
+    color: var(--blanco);
     padding: 10px;
     cursor: pointer;
 }
@@ -333,13 +319,6 @@ main {
     flex-direction: column;
     margin-bottom: 150px;
 }
-
-/* #about h1 {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-    text-align: center;
-} */
 
 .nosotros {
     display: flex;
@@ -441,7 +420,7 @@ main {
     align-self: center;
     justify-self: center;
     padding: 0;
-    color: whitesmoke;
+    color: white;
     text-shadow: 0 0 15px var(--rojo);
     vertical-align: center;
 }
@@ -490,7 +469,7 @@ main {
 }
 
 .galeria-img img{
-    border: whitesmoke 0.5px solid;
+    border: var(--blanco) 0.5px solid;
     border-radius: 10px;
     transition: transform 0.7s ease;
     cursor: pointer;
@@ -536,7 +515,7 @@ main {
     padding: 20px;
     gap: 15px;
     border-radius: 10px;
-    border: whitesmoke solid 1px;
+    border: var(--blanco) solid 1px;
 }
 
 .ver-mas{
@@ -579,7 +558,7 @@ main {
 .cards-productos h3,
 .cards-productos p,
 .cards-productos img {
-    color: whitesmoke;
+    color: white;
     text-align: center;
 }
 
@@ -589,7 +568,7 @@ main {
 
 .cards-productos h3,
 .cards-productos p   {
-    color: whitesmoke;
+    color: white;
     text-align: center;
 }
 
@@ -628,7 +607,7 @@ main {
 }
 
 .form h2{
-    color: whitesmoke;
+    color: white;
     font-size: 60px;
     
 }
@@ -637,7 +616,7 @@ main {
     display: flex;
     align-items: start;
     justify-content: flex-start;
-    color: whitesmoke;
+    color: var(--blanco);
     padding-bottom: 8px;
     padding-top: 13px;
     font-size: 25px;
@@ -668,7 +647,7 @@ main {
     font-family: 'Roboto', sans-serif;
     width: 100px;
     height: 50px;
-    color: whitesmoke;
+    color: var(--blanco);
 }
 
 .mapa{
@@ -686,23 +665,6 @@ main {
         height: 600px;
         padding-right: 20px;
 }
-
-/* xxxxxxxxx VER XXXXXXXXXXX */
-/* xxxxxxxxx VER XXXXXXXXXXX */
-/* xxxxxxxxx VER XXXXXXXXXXX */
-/* xxxxxxxxx VER XXXXXXXXXXX */
-.focus-input{
-    /* crear clase */
-}
-
-.focus-input:focus{
-}
-
-/* xxxxxxxxx VER XXXXXXXXXXX */
-/* xxxxxxxxx VER XXXXXXXXXXX */
-/* xxxxxxxxx VER XXXXXXXXXXX */
-/* xxxxxxxxx VER XXXXXXXXXXX */
-
 
 /* ----- FOOTER ----- */
 
@@ -743,7 +705,7 @@ footer {
 }
 
 .diseño p{
-    color: whitesmoke;
+    color: white;
     font-family: 'Norsebold', sans-serif;
     font-size: 28px;
     text-align: center;

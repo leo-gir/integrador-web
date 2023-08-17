@@ -1,9 +1,9 @@
 
 a{
-    color: whitesmoke;
+    color: white;
 }
 #login h1{
-    color: whitesmoke;
+    color: white;
 }
 .login-img{
     display: flex;
@@ -23,18 +23,11 @@ a{
     align-items: center;
     flex-direction: column;
     max-width: 800px;
-    border: whitesmoke solid 1px;
+    border: var(--blanco) solid 1px;
     padding: 0 30px 30px 30px;
     border-radius: 15px;
     gap: 10px;
 }
-
-/* .form-registro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
 
 .registro{
     display: flex;
@@ -44,7 +37,7 @@ a{
 }
 
 .registro label{
-    color: whitesmoke;
+    color: var(--blanco);
     padding-bottom: 8px;
     padding-top: 13px;
     font-size: 25px;
@@ -65,7 +58,6 @@ a{
 }
 
 .registro-btn input[type=submit] {
-    /* padding:5px 15px;  */
     background: var(--negro); 
     border:2px var(--blanco) solid;
     cursor:pointer;
@@ -73,7 +65,7 @@ a{
     font-family: 'Roboto', sans-serif;
     width: 100px;
     height: 50px;
-    color: whitesmoke;
+    color: var(--blanco);
     font-size: 16px;
 }
 

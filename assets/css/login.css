@@ -1,9 +1,9 @@
 /* ----------- LOGIN ----------- */
 a{
-    color: whitesmoke;
+    color: white;
 }
 #login h1{
-    color: whitesmoke;
+    color: white;
 }
 .login-img{
     display: flex;
@@ -23,7 +23,7 @@ a{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border: whitesmoke solid 1px;
+    border: var(--blanco) solid 1px;
     padding: 0 30px 30px 30px;
     border-radius: 15px;
     max-width: 800px;
@@ -37,7 +37,7 @@ a{
 }   
 
 .login label{
-    color: whitesmoke;
+    color: var(--blanco);
     padding-bottom: 8px;
     padding-top: 13px;
     font-size: 25px;
@@ -58,7 +58,6 @@ a{
 }
 
 .login-btn input[type=submit] {
-    /* padding:5px 15px;  */
     background: var(--negro); 
     border:2px var(--blanco) solid;
     cursor:pointer;
@@ -66,7 +65,7 @@ a{
     font-family: 'Roboto', sans-serif;
     width: 100px;
     height: 50px;
-    color: whitesmoke;
+    color: var(--blanco);
     font-size: 16px;
     
 }

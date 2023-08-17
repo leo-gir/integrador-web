@@ -11,7 +11,7 @@
 
     .nav-list{
         width: 60%;
-        height: calc(100vh - 400px);
+        height: calc(100vh - 190px);
         position: absolute;
         top: 90px;
         right: 20%;
@@ -22,9 +22,9 @@
         border-radius: 0 0 10px 10px;
         gap: 40px;
         background: rgba(0, 0, 0, 0.938);
-        border-left: whitesmoke 1px solid;
-        border-right: whitesmoke 1px solid;
-        border-bottom: whitesmoke 1px solid;
+        border-left: var(--blanco) 1px solid;
+        border-right: var(--blanco) 1px solid;
+        border-bottom: var(--blanco) 1px solid;
         transform: translateX(150%);
         transition: all 0.5s ease;
     }
@@ -102,6 +102,7 @@
 
     .nav-list{
         top: 70px;
+        height: calc(100vh - 90px);
     }
 
     .logo-nav{
@@ -166,6 +167,10 @@
         height: 70px;
     }
 
+    .nav-list{
+        height: calc(100vh - 90px);
+    }
+
     .logo-nav{
         height: 70px;
     }
@@ -173,9 +178,9 @@
     .cart{
         width: 100vw;
         border-radius: 0 0 10px 10px;
-        border-left: whitesmoke 1px solid;
-        border-right: whitesmoke 1px solid;
-        border-bottom: whitesmoke 1px solid;
+        border-left: var(--blanco) 1px solid;
+        border-right: var(--blanco) 1px solid;
+        border-bottom: var(--blanco) 1px solid;
     }
 
     .cards-about{
@@ -255,6 +260,10 @@
         height: 70px;
     }
 
+    .nav-list{
+        height: calc(100vh - 90px);
+    }
+
     .logo-nav{
         height: 70px;
     }
@@ -277,7 +286,7 @@
 
     .down,
     .up{
-    border: whitesmoke 1px solid;
+    border: var(--blanco) 1px solid;
     border-radius: 5px;
     padding: 3px 5px;
     cursor: pointer;
@@ -295,6 +304,15 @@
             max-width: 290px;
     }
 
+    #about{
+        width: 90%;
+    }
+    .nosotros{
+        width: 90%;
+    }
+    .about-info{
+        width: 90%;
+    }
     .card-back{
         background-image: url(../img/flecha-rotada.jpg  );
         background-repeat:no-repeat;
@@ -383,51 +401,3 @@
         max-width: 250px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ----- NAV ----- */
-/* .navbar ul {
-    background-color: var(--bg-violeta);
-    width: 100%;
-    height: calc(70vh - 120px);
-    position: absolute;
-    top: 110px;
-    right: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
-    border-radius: 0 0 5px 5px;
-    display: none;
-}
-
-.menu-label {
-    display: flex;
-    cursor: pointer;
-} */
-
-/* ----- CART ----- */
-/* #toggle-menu:checked~.nav-list {
-    display: flex;
-}
-
-.cart-label {
-    display: flex;
-    cursor: pointer;
-}
-
-#toggle-cart:checked~.nav-list {
-    display: flex;
-} */
